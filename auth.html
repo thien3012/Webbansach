@@ -525,154 +525,50 @@
                 </a>
             </li>
             <li>
-                <span>Cart</span>
+                <span> ĐĂNG KÝ/ ĐĂNG NHẬP</span>
             </li>
         </ul>
-        <h1 class="main-ttl"><span>Cart</span></h1>
-        <!-- Cart Items - start -->
-        <form action="#">
+        <h1 class="main-ttl"><span>ĐĂNG KÝ/ ĐĂNG NHẬP</span></h1>
+        <div class="auth-wrap">
+            <div class="auth-col">
+                <h2>Đăng Nhập</h2>
+                <form method="post" class="login">
+                    <p>
+                        <label for="username">E-mail <span class="required">*</span></label><input type="text" id="username">
+                    </p>
+                    <p>
+                        <label for="password">Mật Khẩu <span class="required">*</span></label><input type="password" id="password">
+                    </p>
+                    <p class="auth-submit">
+                        <input type="submit" value="Đăng nhập">
+                        <input type="checkbox" id="rememberme" value="forever">
+                        <label for="rememberme">Lưu mật khẩu</label>
+                    </p>
+                    <p class="auth-lost_password">
+                        <a href="#">Quên mật khẩu?</a>
+                    </p>
+                </form>
+            </div>
+            <div class="auth-col">
+                <h2>Đăng ký</h2>
+                <form method="post" class="register">
+                    <p>
+                        <label for="reg_email">Email <span class="required">*</span></label><input type="email" id="reg_email">
+                    </p>
+                    <p>
+                        <label for="reg_password">Mật khẩu <span class="required">*</span></label><input type="password" id="reg_password">
+                    </p>
+                    <p>
+                        <label for="reg-sdt"> Số điện thoại <span class="required">*</span></label><input type="sdt" id="reg_sdt">
+                    </p>
+                    <p class="auth-submit">
+                        <input type="submit" value="Đăng ký tài khoản">
+                    </p>
+                </form>
+            </div>
+        </div>
 
-            <div class="cart-items-wrap">
-                <table class="cart-items">
-                    <thead>
-                    <tr>
-                        <td class="cart-image">Photo</td>
-                        <td class="cart-ttl">Products</td>
-                        <td class="cart-price">Price</td>
-                        <td class="cart-quantity">Quantity</td>
-                        <td class="cart-summ">Summ</td>
-                        <td class="cart-del">&nbsp;</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td class="cart-image">
-                            <a href="product.html">
-                                <img src="http://placehold.it/61x80" alt="Similique delectus totam">
-                            </a>
-                        </td>
-                        <td class="cart-ttl">
-                            <a href="product.html">Similique delectus totam</a>
-                            <p>Color: Red</p>
-                            <p>Size: XS</p>
-                        </td>
-                        <td class="cart-price">
-                            <b>$220</b>
-                        </td>
-                        <td class="cart-quantity">
-                            <p class="cart-qnt">
-                                <input value="1" type="text">
-                                <a href="#" class="cart-plus"><i class="fa fa-angle-up"></i></a>
-                                <a href="#" class="cart-minus"><i class="fa fa-angle-down"></i></a>
-                            </p>
-                        </td>
-                        <td class="cart-summ">
-                            <b>$220</b>
-                            <p class="cart-forone">unit price <b>$220</b></p>
-                        </td>
-                        <td class="cart-del">
-                            <a href="#" class="cart-remove"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="cart-image">
-                            <a href="product.html">
-                                <img src="http://placehold.it/69x80" alt="Eveniet nobis minus">
-                            </a>
-                        </td>
-                        <td class="cart-ttl">
-                            <a href="product.html">Eveniet nobis minus</a>
-                        </td>
-                        <td class="cart-price">
-                            <b>$150</b>
-                        </td>
-                        <td class="cart-quantity">
-                            <p class="cart-qnt">
-                                <input value="1" type="text">
-                                <a href="#" class="cart-plus"><i class="fa fa-angle-up"></i></a>
-                                <a href="#" class="cart-minus"><i class="fa fa-angle-down"></i></a>
-                            </p>
-                        </td>
-                        <td class="cart-summ">
-                            <b>$150</b>
-                            <p class="cart-forone">unit price <b>$150</b></p>
-                        </td>
-                        <td class="cart-del">
-                            <a href="#" class="cart-remove"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="cart-image">
-                            <a href="product.html">
-                                <img src="http://placehold.it/96x80" alt="Quod soluta corrupti">
-                            </a>
-                        </td>
-                        <td class="cart-ttl">
-                            <a href="product.html">Quod soluta corrupti</a>
-                        </td>
-                        <td class="cart-price">
-                            <b>$195</b>
-                        </td>
-                        <td class="cart-quantity">
-                            <p class="cart-qnt">
-                                <input value="1" type="text">
-                                <a href="#" class="cart-plus"><i class="fa fa-angle-up"></i></a>
-                                <a href="#" class="cart-minus"><i class="fa fa-angle-down"></i></a>
-                            </p>
-                        </td>
-                        <td class="cart-summ">
-                            <b>$195</b>
-                            <p class="cart-forone">unit price <b>$195</b></p>
-                        </td>
-                        <td class="cart-del">
-                            <a href="#" class="cart-remove"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="cart-image">
-                            <a href="product.html">
-                                <img src="http://placehold.it/67x80" alt="Perferendis recusandae">
-                            </a>
-                        </td>
-                        <td class="cart-ttl">
-                            <a href="product.html">Perferendis recusandae</a>
-                            <p>Color: Blue</p>
-                            <p>Size: XS</p>
-                        </td>
-                        <td class="cart-price">
-                            <b>$250</b>
-                        </td>
-                        <td class="cart-quantity">
-                            <p class="cart-qnt">
-                                <input value="1" type="text">
-                                <a href="#" class="cart-plus"><i class="fa fa-angle-up"></i></a>
-                                <a href="#" class="cart-minus"><i class="fa fa-angle-down"></i></a>
-                            </p>
-                        </td>
-                        <td class="cart-summ">
-                            <b>$250</b>
-                            <p class="cart-forone">unit price <b>$250</b></p>
-                        </td>
-                        <td class="cart-del">
-                            <a href="#" class="cart-remove"></a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <ul class="cart-total">
-                <li class="cart-summ">TOTAL: <b>$815</b></li>
-            </ul>
-            <div class="cart-submit">
-                <div class="cart-coupon">
-                    <input placeholder="your coupon" type="text">
-                    <a class="cart-coupon-btn" href="#"><img src="img/ok.png" alt="your coupon"></a>
-                </div>
-                <a href="#" class="cart-submit-btn">Checkout</a>
-                <a href="#" class="cart-clear">Clear cart</a>
-            </div>
-        </form>
-        <!-- Cart Items - end -->
+
 
     </section>
 </main>
@@ -684,12 +580,6 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="companyinfo">
-                    <a href="index.html">
-                        <img src="img/logo-b.png" alt="AllStore - MultiConcept eCommerce Responsive HTML5 Template">
-                        AllStore - MultiConcept eCommerce Responsive HTML5 Template
-                    </a>
-                </div>
                 <div class="f-block-list">
                     <div class="f-block-wrap">
                         <div class="f-block">
@@ -701,8 +591,8 @@
                                     <i class="fa fa-info-circle"></i>
                                 </div>
                             </a>
-                            <p class="f-info-ttl">About us</p>
-                            <p>Shipping and payment information.</p>
+                            <p class="f-info-ttl">Liên hệ với chúng tôi</p>
+                            <p>Thông tin vận chuyển và thanh toán.</p>
                         </div>
                     </div>
                     <div class="f-block-wrap">
@@ -715,13 +605,13 @@
                                     <i class="fa fa-phone"></i>
                                 </div>
                             </a>
-                            <p class="f-info-ttl">Ask questions</p>
-                            <p>We call back within 10 minutes</p>
+                            <p class="f-info-ttl">Nếu bạn có thắc mắc?</p>
+                            <p>Điền thông tin dưới đây. Chúng tôi sẽ Liên hệ </p>
                         </div>
                     </div>
                     <div class="f-block-wrap">
                         <div class="f-block">
-                            <a href="#" class="f-block-btn" data-id="#f-block-modal-3" data-content="<iframe width='853' height='480' src='https://www.youtube.com/embed/kaOVHSkDoPY?rel=0&amp;showinfo=0' allowfullscreen></iframe>">
+                            <a href="#" class="f-block-btn" data-id="#f-block-modal-3" data-content="<iframe width='1280' height='720' src='https://www.youtube.com/embed/mMjNGpX1yoE' frameborder='0' allow='allowfullscreen'></iframe>">
                                 <div class="iframe-img">
                                     <img src="http://placehold.it/300x127" alt="Video (2 min)">
                                 </div>
@@ -729,8 +619,8 @@
                                     <i class="fa fa-play-circle"></i>
                                 </div>
                             </a>
-                            <p class="f-info-ttl">Video (2 min)</p>
-                            <p>Watch a video about our store</p>
+                            <p class="f-info-ttl">Video Relax (5 phút)</p>
+                            <p>Xem video về cửa hàng của chúng tôi</p>
                         </div>
                     </div>
                     <div class="f-block-wrap">
@@ -743,8 +633,8 @@
                                     <i class="fa fa-map-marker"></i>
                                 </div>
                             </a>
-                            <p class="f-info-ttl">Our address</p>
-                            <p>Spain, Madrid, 45</p>
+                            <p class="f-info-ttl">Địa chỉ</p>
+                            <p>Xa lộ Hà Nội, Quận 9</p>
                         </div>
                     </div>
                 </div>
@@ -773,8 +663,8 @@
                 </div>
                 <div class="f-delivery">
                     <img src="img/map.png" alt="">
-                    <h4>Free delivery in London</h4>
-                    <p>We will deliver within 1 hour</p>
+                    <h4>Miễn phí giao hàng tại Quận 9</h4>
+                    <p>Chúng tôi sẽ giao hàng trong vòng 1 giờ</p>
                 </div>
             </div>
         </div>
@@ -784,14 +674,14 @@
         <div class="row">
             <div class="f-menu">
                 <h3>
-                    About us
+                    Các danh mục
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="catalog-list.html">Catalog</a></li>
-                    <li><a href="elements.html">Elements</a></li>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="catalog-list.html">Mục lục</a></li>
+                    <li><a href="elements.html">Thông tin về chúng tôi</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="contacts.html">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="f-menu">
@@ -799,39 +689,35 @@
                     Shop
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="catalog-list.html">Women</a></li>
-                    <li><a href="catalog-list.html">Men</a></li>
-                    <li><a href="catalog-list.html">Kids</a></li>
-                    <li><a href="catalog-list.html">Shoes</a></li>
-                    <li><a href="catalog-list.html">Accessories</a></li>
+                    <li><a href="catalog-list.html">English Books</a></li>
+                    <li><a href="catalog-list.html">Sách Tiếng Việt</a></li>
+                    <li><a href="catalog-list.html">Quà lưu niệm</a></li>
+                    <li><a href="catalog-list.html">Văn phòng phẩm</a></li>
                 </ul>
             </div>
             <div class="f-menu">
                 <h3>
-                    Information
+                    THÔNG TIN
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog.html">News</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="blog.html">Articles</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="blog.html">Tin tức
+                    </a></li>
+                    <li><a href="reviews.html">Nhận xét</a></li>
+                    <li><a href="blog.html">Bài viết</a></li>
                 </ul>
             </div>
             <div class="f-menu">
                 <h3>
-                    Pages
+                    Các Trang
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="contacts.html">About us</a></li>
-                    <li><a href="contacts.html">Delivery</a></li>
-                    <li><a href="contacts.html">Guarantees</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
                     <li><a href="404.html">Page 404</a></li>
                 </ul>
             </div>
             <div class="f-subscribe">
-                <h3>Subscribe to news</h3>
+                <h3>Subscribe for Me</h3>
                 <form class="f-subscribe-form" action="#">
                     <input placeholder="Your e-mail" type="text">
                     <button type="submit"><i class="fa fa-paper-plane"></i></button>
